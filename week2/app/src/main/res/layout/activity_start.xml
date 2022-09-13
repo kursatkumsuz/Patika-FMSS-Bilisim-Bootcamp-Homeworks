@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.StartActivity" >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="530dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/ic_circle_start"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView2"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="223dp"
+            android:elevation="10dp"
+            android:src="@drawable/pic_one"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Image.Circle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="183dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="113dp"
+            android:src="@drawable/pic_two"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.792"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Image.Circle" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/inter_black"
+            android:text="@string/let_s_get_started"
+            android:textColor="#000000"
+            android:textSize="75sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.237"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="46dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/grow_together"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/joinButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/joinButton"
+            android:layout_width="281dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="#000000"
+            android:text="@string/jo_n_now"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearanceOverlay="@style/buttonShape" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Odev2FMSS</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="grow_together">Grow Together</string>
+    <string name="jo_n_now">Joın Now</string>
+    <string name="enter_your_username_amp_password"><![CDATA[Enter Your Username & Password]]></string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="or_create_a_new_account">Or Create a New Account</string>
+    <string name="forgotten_password">Forgotten Password?</string>
+    <string name="login">Logın</string>
+    <string name="username">Username</string>
+    <string name="create_account">Create \nAccount :)</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="success">SUCCESS!</string>
+    <string name="enter_email_id">Enter Email Id</string>
+    <string name="password">Password</string>
+    <string name="create_username">Create Username</string>
+    <string name="create_password">Create Password</string>
+</resources>

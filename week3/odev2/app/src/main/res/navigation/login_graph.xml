@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.kursatkumsuz.patikaweek3odev2.view.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.kursatkumsuz.patikaweek3odev2.view.fragment.ForgetPasswordFragment"
+        android:label="ForgetPasswordFragment"
+        tools:layout="@layout/fragment_forget_password">
+        <action
+            android:id="@+id/action_forgetPasswordFragment_to_dialogFragment"
+            app:destination="@id/dialogFragment" />
+    </fragment>
+
+    <include app:graph="@navigation/main_graph" />
+
+    <dialog
+        android:id="@+id/dialogFragment"
+        android:name="com.kursatkumsuz.patikaweek3odev2.view.fragment.DialogFragment"
+        android:label="DialogFragment" >
+        <action
+            android:id="@+id/action_dialogFragment_to_main_graph"
+            app:destination="@id/main_graph"
+            app:popUpTo="@id/login_graph"
+            app:popUpToInclusive="true"/>
+    </dialog>
+</navigation>
