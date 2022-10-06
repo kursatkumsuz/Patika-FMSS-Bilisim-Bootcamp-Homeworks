@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="mostPopulerMoviesAdapter"
+            type="com.harunkor.netflixclone.presentation.mostpopulermovies.adapter.MostPopularMoviesAdapter" />
+    </data>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            tools:context=".presentation.ui.HomeFragment">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_netflix_splash_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/popular_on_netflix"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/mostPopularMoviesRecyclerview"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mostPopularMoviesRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:adapter="@{mostPopulerMoviesAdapter}"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:listitem="@layout/default_item_row" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

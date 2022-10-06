@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Netflix Clone</string>
+    <string name="add_profile">Add Profile</string>
+    <string name="started_list_item_title">Kids</string>
+    <string name="citation">Citation</string>
+    <string name="hello_blank_fragment" tools:ignore="MissingTranslation">Hello blank fragment</string>
+    <string name="popular_on_netflix" tools:ignore="MissingTranslation">Popular on Netflix</string>
+    <string name="lorem" tools:ignore="MissingTranslation">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quam dui, vivamus bibendum ut. A morbi mi tortor ut felis non accumsan quis. Massa, id ut ipsum aliquam enim non posuere pulvinar diam.</string>
+    <string name="notifications" tools:ignore="MissingTranslation">Notifications</string>
+    <string name="new_arrival" tools:ignore="MissingTranslation">New Arrival</string>
+    <string name="home" tools:ignore="MissingTranslation">Home</string>
+    <string name="coming_soon" tools:ignore="MissingTranslation">Coming Soon</string>
+    <string name="remind_me" tools:ignore="MissingTranslation">Remind Me</string>
+    <string name="share" tools:ignore="MissingTranslation">Share</string>
+    <string name="top_10_movies" tools:ignore="MissingTranslation">Top 10 Movies</string>
+</resources>

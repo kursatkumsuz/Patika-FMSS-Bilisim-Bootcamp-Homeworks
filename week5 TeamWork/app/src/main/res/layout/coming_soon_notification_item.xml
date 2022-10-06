@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+            <variable
+                name="comingSoonNotificationItem"
+                type="com.harunkor.netflixclone.domain.model.comingsoon.ComingSoonItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/notification_list_color">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView7"
+            android:layout_width="113dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/notifications_default_image"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize8Percent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/new_arrival"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/sf_pro_regular"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            tools:text="Full Title"
+            android:text="@{comingSoonNotificationItem.fullTitle}"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/sf_pro_regular"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:textColor="@color/white"
+            android:alpha="0.5"
+            android:textSize="@dimen/_8ssp"
+            tools:text="Release State"
+            android:text="@{comingSoonNotificationItem.releaseState}"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
